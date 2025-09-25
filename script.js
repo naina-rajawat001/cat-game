@@ -1,6 +1,7 @@
 const feedBtn = document.getElementById("feed");
 const playBtn = document.getElementById("play");
 const mood = document.getElementById("mood");
+const result = document.getElementById("result")
 let hunger = 0;
 let happiness = 10;
 
@@ -28,7 +29,7 @@ setInterval(() => {
 
 
 function statement() {
-    console.log(`hunger: ${hunger}  happiness: ${happiness}`)
+    result.innerText = `hunger: ${hunger}    happiness: ${happiness}`
 }
 
 feedBtn.onclick = () => {
